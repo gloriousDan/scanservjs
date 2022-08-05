@@ -33,6 +33,7 @@ jobs:
         target_repo_token: ${{ secrets.GITHUB_TOKEN }}
         upstream_sync_branch: master
         upstream_sync_repo: aormsby/Fork-Sync-With-Upstream-action
+        upstream_pull_args: "--tags"
       
     # Step 3: Display a sample message based on the sync output var 'has_new_commits'
     - name: New commits found
